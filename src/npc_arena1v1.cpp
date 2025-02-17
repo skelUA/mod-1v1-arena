@@ -95,7 +95,7 @@ class playerscript_1v1arena : public PlayerScript
 public:
     playerscript_1v1arena() : PlayerScript("playerscript_1v1arena") { }
 
-    void OnLogin(Player* pPlayer) override
+    void OnPlayerLogin(Player* pPlayer) override
     {
         if (sConfigMgr->GetOption<bool>("Arena1v1.Announcer", true))
             ChatHandler(pPlayer->GetSession()).SendSysMessage("This server is running the |cff4CFF00Arena 1v1 |rmodule.");
