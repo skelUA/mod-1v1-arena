@@ -108,7 +108,7 @@ public:
                 maxArenaRating = std::max(at->GetRating(), maxArenaRating);
     }
 
-    void OnGetArenaTeamId(Player* player, uint8 slot, uint32& result) override
+    void OnPlayerGetArenaTeamId(Player* player, uint8 slot, uint32& result) override
     {
         if (!player)
             return;
